@@ -1,3 +1,8 @@
+provider "aws" {
+  profile    = "default"
+  region     = "us-west-2"
+}
+
 resource "aws_sqs_queue" "example" {
   name                      = "example"
   delay_seconds             = 10
